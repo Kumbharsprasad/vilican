@@ -1,0 +1,9 @@
+Flask
+playwright
+beautifulsoup4
+requests
+python-dotenv
+groq
+geopy
+aiohttp
+tenacity

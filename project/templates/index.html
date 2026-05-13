@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Lead Generator</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="dashboard-container">
+        <header class="dashboard-header">
+            <h1>AI Lead Generator</h1>
+            <p>Automated business lead extraction and scoring</p>
+        </header>
+
+        <div class="search-section card">
+            <div class="input-group">
+                <input type="text" id="keywordInput" placeholder="Enter product keyword">
+                <button id="getLocationBtn" class="secondary-btn" title="Get my location">📍 Use My Location</button>
+                <button id="generateBtn" class="primary-btn">Search</button>
+            </div>
+            <div id="locationStatus" style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem;"></div>
+            <div id="loadingState" class="hidden">
+                <div class="spinner"></div>
+                <p>Generating Leads... This may take a minute.</p>
+            </div>
+        </div>
+
+        <div class="results-section card">
+            <div class="results-header">
+                <h2>Generated Leads <span id="leadCount" class="badge">0</span></h2>
+                <div class="actions">
+                    <button id="downloadBtn" class="secondary-btn" disabled>Download CSV</button>
+                    <button id="clearBtn" class="danger-btn" disabled>Clear Results</button>
+                </div>
+            </div>
+            
+            <div class="table-container">
+                <table id="resultsTable">
+                    <thead>
+                        <tr>
+                            <th>Company Name</th>
+                            <th>Phone Number</th>
+                            <th>Email ID</th>
+                            <th>Address</th>
+                            <th>Location</th>
+                            <th>Website</th>
+                            <th>Lead Score</th>
+                        </tr>
+                    </thead>
+                    <tbody id="resultsBody">
+                        <tr>
+                            <td colspan="7" class="empty-state">No leads generated yet. Enter a keyword to start.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html>
