@@ -215,16 +215,9 @@ All events are logged to both console and `app.log`:
 - Scraping failures per URL
 
 ---
+## Demo Image
+<img width="1920" height="1505" alt="image" src="https://github.com/user-attachments/assets/cd1e9330-d6d5-4b90-9cd6-52b487d09ca4" />
 
-## 🔭 Future Improvements
-
-- [ ] Add Google Maps scraping via Playwright for richer data
-- [ ] Add pagination / load more results
-- [ ] Integrate LinkedIn company lookups
-- [ ] Add user authentication and lead history storage
-- [ ] Support multiple export formats (Excel, JSON)
-- [ ] Add email verification API integration
-- [ ] Deploy on cloud (Render / Railway / AWS)
 
 ---
 
