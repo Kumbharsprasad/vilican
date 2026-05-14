@@ -92,7 +92,7 @@ def process_leads_with_llm(leads_data, keyword, location_str):
                 {"role": "system", "content": "You are a lead data processing assistant. You always output valid, parseable JSON arrays only."},
                 {"role": "user", "content": prompt}
             ],
-            model="llama3-8b-8192",
+            model="llama-3.1-8b-instant",
             temperature=0.1,
         )
         content = chat_completion.choices[0].message.content.strip()
